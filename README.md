@@ -267,4 +267,4 @@ Para escenarios con **alto volumen de transacciones**, se podrían considerar la
 
 ![Docker-create-transaction-850](./backup/Pruebas/Docker/Docker-create-transaction-850.png)
 
-![Docker-get-transaction-850-approved](./backup/Pruebas/Docker/Docker-get-transaction-1500-approved.png)
+![Docker-get-transaction-850-approved](./backup/Pruebas/Docker/Docker-get-transaction-850-approved.png)
