@@ -16,6 +16,8 @@ Cada transacción sigue un flujo de estados: `pending`, `approved` o `rejected`.
 9. [Swagger Documentation](#swagger-documentation)
 10. [Important Modifications and Commands](#important-modifications-and-commands)
 11. [Additional Resources](#additional-resources)
+12. [Optional: High Volume Scenarios](#optional-high-volume-scenarios)
+13. [Testing Postman](#testing-postman)
 
 ## 🛠 Prerequisites
 
@@ -238,3 +240,31 @@ Para escenarios con **alto volumen de transacciones**, se podrían considerar la
 
 5. **Batch processing y colas**:
    - Procesar transacciones en batches cuando el volumen sea muy alto, reduciendo overhead(carga adicional) de la base de datos.
+
+
+----------------------------------------------------------------------
+## 🔗 Testing Postman
+
+- **LOCAL**
+
+![Local-create-transaction-250](./backup/Pruebas/Local/Local-create-transaction-250.png)
+
+![Local-get-transaction-250-pending](./backup/Pruebas/Local/Local-get-transaction-250-pending.png)
+
+![Local-get-transaction-250-approved](./backup/Pruebas/Local/Local-get-transaction-250-approved.png)
+
+
+![Local-create-transaction-500](./backup/Pruebas/Local/Local-create-transaction-500.png)
+
+![Local-get-transaction-500-approved](./backup/Pruebas/Local/Local-get-transaction-500-approved.png)
+
+
+![Local-create-transaction-1500](./backup/Pruebas/Local/Local-create-transaction-500.png)
+
+![Local-get-transaction-1500-rejected](./backup/Pruebas/Local/Local-get-transaction-1500-rejected.png)
+
+- **DOCKER**
+
+![Docker-create-transaction-850](./backup/Pruebas/Docker/Docker-create-transaction-850.png)
+
+![Docker-get-transaction-850-approved](./backup/Pruebas/Docker/Docker-get-transaction-1500-approved.png)
