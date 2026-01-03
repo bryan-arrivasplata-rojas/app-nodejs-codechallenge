@@ -18,7 +18,6 @@ async function startConsumer() {
       const transaction = JSON.parse(message.value.toString());
 
       await new Promise(resolve => setTimeout(resolve, Number(process.env.DELAY_MS)));
-
       const status = validateTransaction(transaction);
       await updateTransactionStatus(transaction.id, status);
     }

@@ -1,5 +1,5 @@
 function validateTransaction(transaction) {
-  if (transaction.value > 1000) return 'rejected';
+  if (transaction.amount > 1000) return 'rejected';
   return 'approved';
 }
 
